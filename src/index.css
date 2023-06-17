@@ -30,7 +30,7 @@ body {
 
 .nav-container nav {
   top: 0;
-  position: absolute;
+  position: fixed;
   z-index: 9;
   background-color: rgb(255, 145, 255);
   justify-content: space-between;
@@ -98,6 +98,16 @@ body {
     position: relative;
     border-radius: 5px;
     border-color: transparent;
+    font-family: "Allura", sans-serif;
+}
+
+#curr-date {
+  text-shadow: 1px 1px rgb(0, 0, 0);
+  text-align: center;
+  font-size: 2rem;
+  position: relative;
+  font-family: "Allura", sans-serif;
+  transform: translateY(5rem);
 }
 
 .journal-form label {
@@ -105,14 +115,22 @@ body {
     font-size: 2.5rem;
 }
 
+.journal-form input {
+    width: 60%;
+    height: 2rem;
+    font-size: 1.5rem;
+}
+
 .journal-form textarea {
     width: 70%;
     height: 10rem;
+    font-size: 1.5rem;
 }
 
-.journal-form button {
+.journal-form button a, #delete-button, #edit-button, #book-button {
+    font-family: "Montserrat", sans-serif;
     font-size: 1rem;
-    background-color: white;
+    text-decoration: none;
 }
 
 article p {
@@ -122,6 +140,45 @@ article p {
   text-align: center;
 }
 
+.book-form button, .book-form input {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(6rem);
+  margin-top: 1rem;
+  position: relative;
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+.book-form input {
+  width: 50%;
+  font-size: 1rem;
+}
+
+.past-entries {
+  display: block;
+  transform: translateY(10%);
+  align-items: center;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.past-entries ul {
+  border: none;
+}
+
+.past-entries li {
+  margin-bottom: 3rem;
+  list-style: none;
+}
+
+#delete-button, #edit-button {
+  display: inline;
+  margin-right: 1rem;
+}
+
 .notes {
   position: absolute;
   width: 100%;
@@ -129,7 +186,7 @@ article p {
   top: 10%;
 }
 
-#bday-note {
+#bday-note, .book {
   padding: 1rem;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -138,7 +195,11 @@ article p {
   border-radius: 5px;
 }
 
-#bday-note:hover {
+.book-results {
+  transform: translateY(7rem);
+}
+
+#bday-note:hover, .book:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -146,6 +207,24 @@ article p {
 
   #hamburger {
     display: none;
+  }
+
+  .book {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .past-entries {
+    margin-left: 15px;
+  }
+
+  .past-entries p {
+    width: 50%;
+  }
+
+  .journal-form input {
+    width: 40%;
   }
 
   .journal-form textarea {
@@ -161,6 +240,10 @@ article p {
 
   .Home {
     height: 70vh;
+  }
+
+  .book-form input {
+    width: 20%;
   }
 
   .nav-container nav {
