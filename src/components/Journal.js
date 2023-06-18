@@ -26,7 +26,7 @@ export function JournalForm({ onSubmit, handleDelete, posts }) {
     }
 
     return (
-        <div>
+        <div className="journal-container">
             <h2 id="curr-date">{currDate}</h2>
             <form onSubmit={handleSubmit} className="journal-form">
                 <label htmlFor="title">title</label>

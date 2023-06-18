@@ -18,6 +18,11 @@ export function Notes(props) {
                 Hey friend! I can’t believe you’re 21. It’s so weird to think that I’ve known you since I was 15. You’ve always made me feel so loved and so safe. I could not be more grateful to have someone like you to go through life with. You’ve literally seen me at my worst and made it known that I would be supported, no matter what. I have loved watching you become the beautiful baddie you are today. I knew you’d always achieve great things but it’s amazing to actually be able to watch it happen. You deserve all the great things coming your way. I hope 21 treats you right and you get to experience and adventure and feel so loved. I adore you. I love you. I appreciate you. Thank you for being you. And thank you for being one of my most favorite people on this entire planet (and she’s pretty fatty). Happy happy 21!
                 <br />Love,
                 <br />Claire Bear xoxo</p>
+            <p id="bday-note">Mia,
+                Happy birthday my lovely sister! You amaze me every day. From our bunk bed days to living countries away, you’ve always found a way to make me proud. You are clever and creative and brave. You shine! I am so lucky to have you in my life as a sister and friend. I wish I could be with you on your day but I am sending lots and lots of love!!
+                <br />Keep shining!
+                <br />-Belle
+            </p>
             <p id="bday-note">Happy Birthday! And your 21st! I hope you have a wonderful day surrounded by all your special favorites. I learned that you love to write and like me, you love fantasy stories with strong female heroes. We always need more of those and I wish you all the best on your writing journey, whatever avenue it takes you down. Keep going and follow your dreams, however they may evolve.
                 <br />Paviamma,
                 <br />Mary E. Pearson</p>

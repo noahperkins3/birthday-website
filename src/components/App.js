@@ -5,6 +5,7 @@ import { Notes } from './Notes.js';
 import { BookForm, BookResults } from './Books.js';
 import { Home } from './Home.js';
 import { JournalForm, PastEntries } from './Journal.js';
+import { Musicals } from './Musicals.js';
 
 import React, { useEffect, useState } from 'react';
 import { initializeApp } from "firebase/app";
@@ -86,6 +87,7 @@ function App() {
         <Route path="/books" element={<BookForm />} />
         <Route path="/journal" element={<JournalForm onSubmit={handleSubmit} handleDelete={handleDelete} posts={posts} />} />
         <Route path="/past-entries" element={<PastEntries handleDelete={handleDelete} posts={posts} />} />
+        <Route path="/musicals" element={<Musicals />} />
       </Routes>
     </div>
   );

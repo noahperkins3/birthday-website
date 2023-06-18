@@ -21,7 +21,7 @@ export function NavBar() {
                 <li className="nav-item"><NavLink onClick={handleClick} to="/books">books</NavLink></li>
                 <li className="nav-item"><NavLink onClick={handleClick} to="/travel">travel</NavLink></li>
                 <li className="nav-item"><NavLink onClick={handleClick} to="/notes">notes</NavLink></li>
-                <li className="nav-item"><a href="">musicals</a></li>
+                <li className="nav-item"><NavLink onClick={handleClick} to="/musicals">musicals</NavLink></li>
                 <li className="nav-item"><NavLink onClick={handleClick} to="/journal">write</NavLink></li>
             </ul>
         </nav>
