@@ -16,7 +16,8 @@ export function JournalForm({ onSubmit, handleDelete, posts }) {
 
         const newPost = {
             title,
-            content
+            content,
+            date: currDate,
         }
 
         onSubmit(newPost);
@@ -28,6 +29,7 @@ export function JournalForm({ onSubmit, handleDelete, posts }) {
     return (
         <div className="journal-container">
             <h2 id="curr-date">{currDate}</h2>
+            <button id="view-entries"><NavLink to="/past-entries">View Past Entries</NavLink></button>
             <form onSubmit={handleSubmit} className="journal-form">
                 <label htmlFor="title">title</label>
                 <input
@@ -56,17 +58,19 @@ export function PastEntries({ handleDelete, posts }) {
     let currDate = date.toLocaleDateString();
 
     return (
+        <div className="past-entries-container">
         <ul className="past-entries">
             {posts.map((post) => (
                 <li key={post.id}>
                     <h2>{post.title}</h2>
-                    <h4>{currDate}</h4>
+                    <h4>{post.date}</h4>
                     <p>{post.content}</p>
                     <button id="delete-button" onClick={() => handleDelete(post.id)}>Delete</button>
-                    <button id="edit-button" onClick="">Edit</button>
+                    {/* <button id="edit-button" onClick="">Edit</button> */}
                 </li>
             ))}
         </ul>
+        </div>
     );
 
 }

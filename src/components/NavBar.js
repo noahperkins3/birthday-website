@@ -3,6 +3,7 @@ import {React, useState} from 'react';
 
 export function NavBar() {
     const [open, setOpen] = useState(false);
+    const [lightBackground, setLightBackground] = useState(false);
 
     function handleHamburgerClick() {
         setOpen(!open);
@@ -10,6 +11,12 @@ export function NavBar() {
 
     function handleClick(e) {
         setOpen(false);
+        setLightBackground(false);
+    }
+
+    function handleLightBackground(e) {
+        setOpen(false);
+        setLightBackground(true);
     }
 
     return (
@@ -21,7 +28,7 @@ export function NavBar() {
                 <li className="nav-item"><NavLink onClick={handleClick} to="/books">books</NavLink></li>
                 <li className="nav-item"><NavLink onClick={handleClick} to="/travel">travel</NavLink></li>
                 <li className="nav-item"><NavLink onClick={handleClick} to="/notes">notes</NavLink></li>
-                <li className="nav-item"><NavLink onClick={handleClick} to="/musicals">musicals</NavLink></li>
+                <li className="nav-item"><NavLink onClick={handleLightBackground} to="/musicals">musicals</NavLink></li>
                 <li className="nav-item"><NavLink onClick={handleClick} to="/journal">write</NavLink></li>
             </ul>
         </nav>

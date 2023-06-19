@@ -22,7 +22,8 @@ export function Map(props) {
     };
 
     return (
-        <div class="map-container">
+        <div className="travel-container">
+        <div className="map-container">
             <h1>Interactive Map</h1>
         <LoadScript googleMapsApiKey="AIzaSyD8j_NkF2YhA8Aas-FFB3NEW13zVG7AdL8">
             <GoogleMap
@@ -31,6 +32,7 @@ export function Map(props) {
                 zoom={mapOptions.zoom}
             />
         </LoadScript>
+        </div>
         </div>
     );
 }

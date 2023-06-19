@@ -61,18 +61,18 @@ body {
   transform: translateY(20%);
 }
 
-.nav-item {
+.nav-item, .dark-nav-item {
   margin-bottom: 1rem;
 }
 
-.nav-item a {
+.nav-item a, .dark-nav-item a {
   color: white;
   font-size: 2.5rem;
   text-decoration: none;
   text-shadow: 1px 1px rgb(255, 249, 161);
 }
 
-.nav-item a:hover {
+.nav-item a:hover, .dark-nav-item a:hover {
   color: rgb(255, 228, 148);
 }
 
@@ -85,11 +85,32 @@ body {
   width: 20rem;
 }
 
+#view-entries {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: rgb(255, 161, 177);
+  border-radius: 10px;
+  border: none;
+  padding: .5rem;
+  transform: translateY(1rem);
+}
+
+#view-entries a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+#view-entries a:hover {
+  color: rgb(255, 249, 161);
+}
+
 .journal-form {
     font-family: "Allura", sans-serif;
     font-size: 2rem;
     display: block;
-    transform: translateY(30%);
+    padding-top: 5rem;
 }
 
 .journal-form input, .journal-form label, .journal-form textarea, .journal-form button {
@@ -109,7 +130,7 @@ body {
   font-size: 2rem;
   position: relative;
   font-family: "Allura", sans-serif;
-  transform: translateY(5rem);
+  transform: translateY(10rem);
 }
 
 .journal-container {
@@ -154,7 +175,7 @@ article p {
 .book-container {
   background-image: url("../public/img/floral.webp");
   background-repeat: repeat;
-  transform: translateY(-1rem);
+  padding-top: 1rem;
   background-size: cover;
   height: 100vh;
 }
@@ -183,6 +204,13 @@ article p {
   font-size: 1rem;
 }
 
+.travel-container {
+  background-image: url("../public/img/bluesky.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  height: 100vh;
+}
+
 .map-container h1 {
   position: absolute;
   top: 15%;
@@ -190,21 +218,71 @@ article p {
   transform: translateX(-50%);
 }
 
-.past-entries {
-  display: block;
-  transform: translateY(10%);
-  align-items: center;
-  height: 100vh;
-  font-family: "Montserrat", sans-serif;
+.musicals-container {
+  background-image: url("../public/img/playbills.jpg");
+  /* height: 100vh; */
+  background-repeat: repeat;
 }
 
-.past-entries ul {
-  border: none;
+.musicals-container iframe {
+  display: flexbox;
+  border-radius: 0px;
+  width: 50%;
+}
+
+.spotify-search {
+  display: block;
+  position: relative;
+  padding-bottom: 5rem;
+}
+
+.spotify-search input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  font-family: "Allura", sans-serif;
+  font-size: 1.5rem;
+}
+
+.spotify-search button {
+  border: 1px solid rgb(0, 0, 0);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  position: relative;
+  border-radius: 5px;
+  font-family: "Allura", sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.past-entries-container {
+  background-image: url("../public/img/botanical.jpg");
+  height: 100vh;
+  background-repeat: repeat;
+  background-size: contain;
+  padding-top: 2rem;
+  margin: auto;
+}
+
+.past-entries {
+  display: block;
+  transform: translateY(4rem);
+  font-family: "Montserrat", sans-serif;
+  margin: auto;
 }
 
 .past-entries li {
-  margin-bottom: 3rem;
   list-style: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: .5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
 }
 
 #delete-button, #edit-button {
@@ -217,10 +295,10 @@ article p {
   width: 100%;
   background-image: url("../public/img/redwall.jpg");
   background-repeat: repeat;
+  padding-top: 3rem;
 }
 
 #bday-note {
-  transform: translateY(3rem);
 }
 
 #bday-note, .book {
@@ -303,8 +381,18 @@ article p {
     z-index: 1;
   }
 
-  .nav-item {
+  .nav-item, .dark-nav-item {
     margin: 0 1rem;
+  }
+
+  .dark-nav-item a {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border-width: 1px;
+    text-shadow: none;
+    font-size: 2.5rem;
+    text-decoration: none;
   }
 
 }
