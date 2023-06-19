@@ -172,6 +172,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   text-decoration: none;
+  color: black;
 }
 
 article p {
@@ -227,6 +228,7 @@ article p {
   top: 15%;
   left: 50%;
   transform: translateX(-50%);
+  text-align: center;
 }
 
 .travel-checklist h1 {
