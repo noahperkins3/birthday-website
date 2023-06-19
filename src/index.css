@@ -212,10 +212,20 @@ article p {
 }
 
 .map-container h1 {
+  font-size: 1.5rem;
   position: absolute;
   top: 15%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.travel-checklist h1 {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 14rem);
+  text-align: center;
+
 }
 
 .musicals-container {
