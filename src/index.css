@@ -61,18 +61,21 @@ body {
   transform: translateY(20%);
 }
 
-.nav-item, .dark-nav-item {
+.nav-item,
+.dark-nav-item {
   margin-bottom: 1rem;
 }
 
-.nav-item a, .dark-nav-item a {
+.nav-item a,
+.dark-nav-item a {
   color: white;
   font-size: 2.5rem;
   text-decoration: none;
   text-shadow: 1px 1px rgb(255, 249, 161);
 }
 
-.nav-item a:hover, .dark-nav-item a:hover {
+.nav-item a:hover,
+.dark-nav-item a:hover {
   color: rgb(255, 228, 148);
 }
 
@@ -107,21 +110,24 @@ body {
 }
 
 .journal-form {
-    font-family: "Allura", sans-serif;
-    font-size: 2rem;
-    display: block;
-    padding-top: 5rem;
+  font-family: "Allura", sans-serif;
+  font-size: 2rem;
+  display: block;
+  padding-top: 5rem;
 }
 
-.journal-form input, .journal-form label, .journal-form textarea, .journal-form button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1rem;
-    position: relative;
-    border-radius: 5px;
-    border-color: transparent;
-    font-family: "Allura", sans-serif;
+.journal-form input,
+.journal-form label,
+.journal-form textarea,
+.journal-form button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  position: relative;
+  border-radius: 5px;
+  border-color: transparent;
+  font-family: "Allura", sans-serif;
 }
 
 #curr-date {
@@ -142,27 +148,30 @@ body {
 }
 
 .journal-form label {
-    text-align: center;
-    font-size: 2.5rem;
-    text-shadow: 2px 2px rgb(0, 0, 0);
+  text-align: center;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px rgb(0, 0, 0);
 }
 
 .journal-form input {
-    width: 60%;
-    height: 2rem;
-    font-size: 1.5rem;
+  width: 60%;
+  height: 2rem;
+  font-size: 1.5rem;
 }
 
 .journal-form textarea {
-    width: 70%;
-    height: 10rem;
-    font-size: 1.5rem;
+  width: 70%;
+  height: 10rem;
+  font-size: 1.5rem;
 }
 
-.journal-form button a, #delete-button, #edit-button, #book-button {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
-    text-decoration: none;
+.journal-form button a,
+#delete-button,
+#edit-button,
+#book-button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
 }
 
 article p {
@@ -187,7 +196,8 @@ article p {
   background-size: contain;
 }
 
-.book-form button, .book-form input {
+.book-form button,
+.book-form input {
   text-align: center;
   display: block;
   margin-left: auto;
@@ -235,9 +245,9 @@ article p {
 }
 
 .musicals-container iframe {
-  display: flexbox;
+  display: block;
   border-radius: 0px;
-  width: 50%;
+  width: 100%;
 }
 
 .spotify-search {
@@ -273,7 +283,7 @@ article p {
 
 .past-entries-container {
   background-image: url("../public/img/botanical.jpg");
-  height: 100vh;
+  /* height: 100vh; */
   background-repeat: repeat;
   background-size: contain;
   padding-top: 2rem;
@@ -281,8 +291,8 @@ article p {
 }
 
 .past-entries {
+  padding-top: 2rem;
   display: block;
-  transform: translateY(4rem);
   font-family: "Montserrat", sans-serif;
   margin: auto;
 }
@@ -291,11 +301,12 @@ article p {
   list-style: none;
   background-color: rgba(0, 0, 0, 0.5);
   padding: .5rem;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
   border-radius: 5px;
 }
 
-#delete-button, #edit-button {
+#delete-button,
+#edit-button {
   display: inline;
   margin-right: 1rem;
 }
@@ -308,10 +319,8 @@ article p {
   padding-top: 3rem;
 }
 
-#bday-note {
-}
-
-#bday-note, .book {
+#bday-note,
+.book {
   padding: 1rem;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -325,7 +334,8 @@ article p {
   text-shadow: 2px 2px rgb(0, 0, 0);
 }
 
-#bday-note:hover, .book:hover {
+#bday-note:hover,
+.book:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -391,7 +401,8 @@ article p {
     z-index: 1;
   }
 
-  .nav-item, .dark-nav-item {
+  .nav-item,
+  .dark-nav-item {
     margin: 0 1rem;
   }
 
@@ -403,6 +414,12 @@ article p {
     text-shadow: none;
     font-size: 2.5rem;
     text-decoration: none;
+  }
+
+  .musicals-container iframe {
+    display: inline-flex;
+    border-radius: 0px;
+    width: 50%;
   }
 
 }

@@ -9,6 +9,7 @@ export function JournalForm({ onSubmit, handleDelete, posts }) {
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
     const [formSubmitted, setFormSubmitted] = useState(false);
+    const entryDate = currDate;
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -17,7 +18,7 @@ export function JournalForm({ onSubmit, handleDelete, posts }) {
         const newPost = {
             title,
             content,
-            date: currDate,
+            entryDate
         }
 
         onSubmit(newPost);
@@ -63,7 +64,7 @@ export function PastEntries({ handleDelete, posts }) {
             {posts.map((post) => (
                 <li key={post.id}>
                     <h2>{post.title}</h2>
-                    <h4>{post.date}</h4>
+                    <h4>{post.entryDate}</h4>
                     <p>{post.content}</p>
                     <button id="delete-button" onClick={() => handleDelete(post.id)}>Delete</button>
                     {/* <button id="edit-button" onClick="">Edit</button> */}

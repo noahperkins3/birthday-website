@@ -1,0 +1,11 @@
+{
+  "projects": {
+    "default": "mia-birthday-21"
+  },
+  "targets": {},
+  "etags": {
+    "mia-birthday-21": {
+      "extensionInstances": {}
+    }
+  }
+}

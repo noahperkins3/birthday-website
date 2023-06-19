@@ -46,7 +46,7 @@ export function Map(props) {
                     {placesVisited.map((place) => (
                         <li id="location-item" onClick={handleClick}>{place}</li>
                     ))}
-                    <li>Test</li>
+                    {/* <li>Test</li> */}
                 </ul>
             </div>
         </div>
